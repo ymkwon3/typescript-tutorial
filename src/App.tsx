@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+let name: string;
+name = 'good'
+
+function printAge(age: string | number) {
+  console.log(age);
+}
+
+let printName: (name: string) => never;
+
+type Person = {
+  name: string;
+  age?: number;
+}
+
+let ps: Person = {
+  name: "img",
+}
+let people: Person[];
+
 function App() {
+  printAge(123);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }
